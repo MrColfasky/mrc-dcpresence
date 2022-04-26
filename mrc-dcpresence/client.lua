@@ -1,7 +1,7 @@
 Citizen.CreateThread(function()
 	while true do
         -- This is the Application ID (Replace this with you own)
-		SetDiscordAppId(966037984023560374)
+		SetDiscordAppId()
 
         -- Here you will have to put the image name for the "large" icon.
 		SetDiscordRichPresenceAsset('logo')
@@ -9,7 +9,7 @@ Citizen.CreateThread(function()
         -- (11-11-2018) New Natives:
 
         -- Here you can add hover text for the "large" icon.
-        SetDiscordRichPresenceAssetText('HellRP | wl-off | RolePlay!')
+        SetDiscordRichPresenceAssetText('')
        
         -- Here you will have to put the image name for the "small" icon.
         SetDiscordRichPresenceAssetSmall('logo')
@@ -25,8 +25,8 @@ Citizen.CreateThread(function()
             First paramater is the button index (0 or 1), second is the title and 
             last is the url (this has to start with "fivem://connect/" or "https://") 
         ]]--
-        SetDiscordRichPresenceAction(0, "Nasz Discord!", "https://discord.gg/he9e27jJXX")
-        SetDiscordRichPresenceAction(1, "Connect HellRP!", "fivem://connect/hellrp.pl")
+        SetDiscordRichPresenceAction(0, "Nasz Discord!", "https://discord.gg/")
+        SetDiscordRichPresenceAction(1, "Connect HellRP!", "fivem://connect/")
 
         -- It updates every minute just in case.
 		Citizen.Wait(60000)
